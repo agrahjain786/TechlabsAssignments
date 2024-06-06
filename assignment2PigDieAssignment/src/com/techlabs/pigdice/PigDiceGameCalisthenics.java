@@ -66,10 +66,9 @@ public class PigDiceGameCalisthenics {
 	}
 
 	private static void endGame(PigDiceGameModel game, Scanner scanner) {
-		
-		            game.setTotal_score(0);
+			
+					game.setTotal_score(0);
 					System.out.println("Turn Over. No Score\n");
-					
 					game.setNewTurn(true);
 	}
 

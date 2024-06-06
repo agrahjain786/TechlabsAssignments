@@ -18,7 +18,6 @@ public class PigDiceGameCalisthenics {
 			System.out.println("Total Score: "+ game.getTotal_score()+"\n");
 		}
 		
-		System.out.println("Total Score: "+ game.getTotal_score());
 		System.out.println("You finished in "+game.getNumber_of_turns()+ " turns.");
 		System.out.println("\nGame Over!!");
 		

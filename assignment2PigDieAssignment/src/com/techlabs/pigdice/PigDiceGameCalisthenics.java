@@ -42,8 +42,6 @@ public class PigDiceGameCalisthenics {
 	private static void hold(PigDiceGameModel game, Scanner scanner) {
 		
 				System.out.println("\nScore for turn: "+ game.getScore_for_current_turn());
-//				System.out.println("Total Score: "+ game.getTotal_score()+"\n");
-				
 				game.setNewTurn(true);
 		
 	}
@@ -85,7 +83,7 @@ public class PigDiceGameCalisthenics {
 
 	private static void newTurn(PigDiceGameModel game, Scanner scanner) {
 		
-		        game.setNumber_of_turns(game.getNumber_of_turns()+1);
+				game.setNumber_of_turns(game.getNumber_of_turns()+1);
 				System.out.println("TURN "+ game.getNumber_of_turns() +"\n");
 				game.setScore_for_current_turn(0);
 				

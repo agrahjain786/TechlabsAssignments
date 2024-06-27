@@ -12,7 +12,7 @@ public class CatalogBook implements ICatalogBook{
 
 
 	public void catalogBook() {
-		System.out.println(book.getTitle() + " by " + book.getAuthor());
+		System.out.println("Cataloging book: " + book.getTitle() + " by " + book.getAuthor());
 		
 	}
 

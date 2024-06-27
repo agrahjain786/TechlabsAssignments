@@ -12,11 +12,11 @@ public class ReturnBook implements IReturnBook{
 	}
 	
 	public void returnBook() {
-        if (!book.isBorrowed()) {
+        if (book.isBorrowed()) {
             book.setBorrowed(false);
-            System.out.println(user.getName() + " has borrowed " + book.getTitle());
+            System.out.println(user.getName() + " has returned " + book.getTitle());
         } else {
-            System.out.println(book.getTitle() + " is already borrowed.");
+            System.out.println(book.getTitle() + " is not borrowed.");
         }
     }
 	

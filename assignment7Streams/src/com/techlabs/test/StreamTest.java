@@ -24,7 +24,7 @@ public class StreamTest {
 			String line;
 			while ((line = br.readLine()) != null) {
 				names.add(line);
-	                }
+	        }
 			
 			
 			Scanner scanner = new Scanner(System.in);
@@ -56,8 +56,8 @@ public class StreamTest {
 			names.stream()
 			.sorted(String.CASE_INSENSITIVE_ORDER)
 			.forEach((s) -> System.out.println(s));
-			
 
+			
 			
 //			Remove duplicate names from the list. 
 			System.out.println("\nAfter removing duplicates: ");
@@ -65,8 +65,8 @@ public class StreamTest {
 			.collect(Collectors.toSet())
 			.forEach((s) -> System.out.println(s));
 			
-		
-		
+
+			
 //			Collect the names into a new list. 
 			List<String> collectingInList = names.stream()
 					.collect(Collectors.toList());
@@ -75,7 +75,7 @@ public class StreamTest {
 			collectingInList.stream()
 			.forEach((s) -> System.out.println(s));
 
-
+			
 			
 //			Count the number of names that satisfy a certain condition -   names that does not contain ‘i’
 			System.out.println("\nEnter the character that should not included in the name: ");
@@ -88,15 +88,19 @@ public class StreamTest {
 			System.out.println("Count of Names without the letter are: "+namesWithoutChar);
 
 			
+			
+			
 //			Concatenate all the names into a single string separated by commas.
 			System.out.println("\nConcatenating all the names into a single string separated by commas: ");
 			String allNames = names.stream().collect(Collectors.joining(", "));
 			System.out.println(allNames);
 
-
+			
+			
 			
 //			Filter names that start with 'J', convert them to uppercase, sort them, and then collect them into a list.
 			System.out.println("\nFilter names that start with 'J', convert them to uppercase, sort them, and then collecting them into a list: ");
+			
 			names.stream()
 			.filter((s) -> s.charAt(0) == 'J')
 			.map((s) -> s.toUpperCase())

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.monocept.model.RegisterUser"/>
+    <fullyQualifiedTypeName name="com.monocept.model.CatalogBook"/>
+    <fullyQualifiedTypeName name="com.monocept.model.ReturnBook"/>
 </qualifiedTypeNameHistroy>

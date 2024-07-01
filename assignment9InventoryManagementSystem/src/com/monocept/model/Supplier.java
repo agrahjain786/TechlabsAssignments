@@ -7,9 +7,9 @@ public class Supplier {
     private String contactInformation;
     
     
-	public Supplier(String supplierId, String name, String contactInformation) {
+	public Supplier(String name, String contactInformation) {
 		super();
-		this.supplierId = supplierId;
+		this.supplierId = UniqueIDGenerator.generateSupplierId();
 		this.name = name;
 		this.contactInformation = contactInformation;
 	}

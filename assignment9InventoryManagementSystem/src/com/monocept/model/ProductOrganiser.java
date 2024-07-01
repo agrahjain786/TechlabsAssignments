@@ -1,6 +1,8 @@
 package com.monocept.model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.monocept.exceptions.DuplicateProductException;
@@ -8,11 +10,9 @@ import com.monocept.exceptions.ProductNotFoundException;
 
 public class ProductOrganiser implements ProductManagement{
 	
-	private Map<String, Product> products;
+	private Map<String, Product> products = new HashMap<>();;
 	
-	public ProductOrganiser() {
-        this.products = new HashMap<>();
-    }
+	
 	
 	@Override
 	public void addProduct(Product product) throws DuplicateProductException{
@@ -31,6 +31,8 @@ public class ProductOrganiser implements ProductManagement{
 		}
 		products.put(product.getProductId(), product);
 	}
+
+	
 
 	@Override
 	public void deleteProduct(String productId) throws ProductNotFoundException {
@@ -59,5 +61,20 @@ public class ProductOrganiser implements ProductManagement{
 		}
 		
 	}
+	
+	
+	public List<Product> getListOfAllProducts(){
+		return new ArrayList<>(products.values());
+	}
+	
+	
+	public Map<String, Product> getProducts() {
+		return products;
+	}
 
+	public void setProducts(Map<String, Product> products) {
+		this.products = products;
+	}
+	
+	
 }

@@ -9,11 +9,10 @@ import com.monocept.exceptions.ProductNotFoundException;
 
 public class TransactionOrganiser implements TransactionManagement{
 	
-	private List<Transaction> transactions;
+	private List<Transaction> transactions = new ArrayList<>();
     private ProductOrganiser productOrganiser;
 
     public TransactionOrganiser(ProductOrganiser productOrganiser) {
-        this.transactions = new ArrayList<>();
         this.productOrganiser = productOrganiser;
     }
 
@@ -51,6 +50,15 @@ public class TransactionOrganiser implements TransactionManagement{
             }
         }
     }
+    
+    public List<Transaction> getListOfAllTransactions(){
+    	return transactions;
+    }
+
+	public void setTransactions(List<Transaction> transactions) {
+		this.transactions = transactions;
+	}
 	
+    
 
 }

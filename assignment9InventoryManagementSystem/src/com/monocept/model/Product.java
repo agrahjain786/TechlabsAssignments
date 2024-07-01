@@ -8,9 +8,9 @@ public class Product {
     private int quantity;
     private double price;
     
-	public Product(String productId, String name, String description, int quantity, double price) {
+	public Product(String name, String description, int quantity, double price) {
 		super();
-		this.productId = productId;
+		this.productId = UniqueIDGenerator.generateProductId();
 		this.name = name;
 		this.description = description;
 		this.quantity = quantity;

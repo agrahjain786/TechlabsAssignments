@@ -1,6 +1,8 @@
 package com.monocept.model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.monocept.exceptions.DuplicateSupplierException;
@@ -8,11 +10,9 @@ import com.monocept.exceptions.SupplierNotFoundException;
 
 public class SupplierOrganiser implements SupplierManagement{
 	
-	private Map<String, Supplier> suppliers;
+	private Map<String, Supplier> suppliers = new HashMap<>();;
 	
-	public SupplierOrganiser() {
-        this.suppliers = new HashMap<>();
-    }
+	
 
 	public void addSupplier(Supplier supplier) throws DuplicateSupplierException {
         if (suppliers.containsKey(supplier.getSupplierId())) {
@@ -52,6 +52,18 @@ public class SupplierOrganiser implements SupplierManagement{
 		for(Supplier supplier: suppliers.values()) {
 			System.out.println(supplier);
 		}
+	}
+	
+	public List<Supplier> getListOfAllSuppliers(){
+		return new ArrayList<>(suppliers.values());
+	}
+
+	public Map<String, Supplier> getSuppliers() {
+		return suppliers;
+	}
+
+	public void setSuppliers(Map<String, Supplier> suppliers) {
+		this.suppliers = suppliers;
 	}
 
 }

@@ -30,8 +30,8 @@
 		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="427"/>
-		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_X_ORIGIN" value="377"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="650"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -137,5 +137,7 @@
 		<item key="DIALOG_WIDTH" value="549"/>
 		<item key="DIALOG_HEIGHT" value="641"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="JavaElementSearchActions">
 	</section>
 </section>

@@ -836,3 +836,16 @@ Java Model Exception: Error in Java Model (code 1006): <project root> [in assign
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1006 2024-06-30 22:36:37.715
 !MESSAGE <project root> [in assignment9InventoryManagementSystem] is not on its project's build path
+!SESSION 2024-07-01 00:54:39.511 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=20.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/abhijain/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/abhijain/.eclipse_keyring -data /Users/abhijain/TechlabsAssignments
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-01 00:54:40.636
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-01 00:54:41.292
+!MESSAGE Logback config file: /Users/abhijain/TechlabsAssignments/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml

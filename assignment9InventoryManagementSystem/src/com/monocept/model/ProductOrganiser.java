@@ -54,6 +54,9 @@ public class ProductOrganiser implements ProductManagement{
 	@Override
 	public void getAllProducts() {
 		// TODO Auto-generated method stub
+		for(Product product: products.values()) {
+			System.out.println(product);
+		}
 		
 	}
 

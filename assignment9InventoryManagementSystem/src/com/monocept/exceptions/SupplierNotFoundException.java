@@ -1,5 +1,9 @@
 package com.monocept.exceptions;
 
-public class SupplierNotFoundException {
-
+public class SupplierNotFoundException extends Exception {
+	
+	
+    public SupplierNotFoundException(String message) {
+        super(message);
+    }
 }

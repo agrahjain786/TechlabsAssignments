@@ -7,14 +7,14 @@ import com.monocept.model.Inventory;
 public class Test {
 	
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
 		
-		Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 		
-		Inventory inventory = new Inventory();
+	Inventory inventory = new Inventory();
 		
-		while (true) {
+	while (true) {
             System.out.println("Welcome to the Inventory Management System");
             System.out.println("1. Product Management");
             System.out.println("2. Supplier Management");
@@ -56,13 +56,13 @@ public class Test {
 	            default:
 	                System.out.println("Invalid choice. Please enter a valid option.");
 	        }
-		}
-		
 	}
+		
+}
 
-	private static void handleProductManagement(Inventory inventory, Scanner scanner) {
+private static void handleProductManagement(Inventory inventory, Scanner scanner) {
 		// TODO Auto-generated method stub
-		System.out.println("\nProduct Management:");
+	System.out.println("\nProduct Management:");
         System.out.println("1. Add Product");
         System.out.println("2. Update Product");
         System.out.println("3. Delete Product");
@@ -96,10 +96,10 @@ public class Test {
 	}
 	
 	
-	private static void handleSupplierManagement(Inventory inventory, Scanner scanner) {
-		// TODO Auto-generated method stub
+private static void handleSupplierManagement(Inventory inventory, Scanner scanner) {
+	// TODO Auto-generated method stub
 		
-		System.out.println("Supplier Management:");
+	System.out.println("Supplier Management:");
         System.out.println("1. Add Supplier");
         System.out.println("2. Update Supplier");
         System.out.println("3. Delete Supplier");
@@ -132,9 +132,9 @@ public class Test {
 	}
 	
 	
-	private static void handleTransactionManagement(Inventory inventory, Scanner scanner) {
-		// TODO Auto-generated method stub
-		System.out.println("Transaction Management: ");
+private static void handleTransactionManagement(Inventory inventory, Scanner scanner) {
+	// TODO Auto-generated method stub
+	System.out.println("Transaction Management: ");
         System.out.println("1. Add Stock");
         System.out.println("2. Remove Stock");
         System.out.println("3. View Transaction History");
@@ -156,6 +156,6 @@ public class Test {
 	            System.out.println("Invalid choice");
         }
 		
-	}
+}
 
 }

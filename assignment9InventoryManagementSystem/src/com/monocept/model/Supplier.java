@@ -15,6 +15,15 @@ public class Supplier {
 	}
 
 
+	public Supplier(String supplierId, String supplierName, String supplierContactInfo) {
+		// TODO Auto-generated constructor stub
+		super();
+		this.supplierId = supplierId;
+		this.name = name;
+		this.contactInformation = contactInformation;
+	}
+
+
 	public String getSupplierId() {
 		return supplierId;
 	}

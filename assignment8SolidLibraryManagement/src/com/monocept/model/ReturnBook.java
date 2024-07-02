@@ -14,6 +14,7 @@ public class ReturnBook implements IReturnBook{
 	public void returnBook() {
         if (book.isBorrowed()) {
             book.setBorrowed(false);
+            book.setBorrowerId(null);
             System.out.println(user.getName() + " has returned " + book.getTitle());
         } else {
             System.out.println(book.getTitle() + " is not borrowed.");

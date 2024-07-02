@@ -14,6 +14,7 @@ public class BorrowBook implements IBorrowBook{
 	public void borrowBook() {
         if (!book.isBorrowed()) {
             book.setBorrowed(true);
+            book.setBorrowerId(user.getUserId());
             System.out.println(user.getName() + " has borrowed " + book.getTitle());
         } else {
             System.out.println(book.getTitle() + " is already borrowed.");

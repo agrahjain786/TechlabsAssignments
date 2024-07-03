@@ -8,4 +8,10 @@ public class AddOperation implements IOperation {
 		return a+b;
 	}
 
+	@Override
+	public String description() {
+		// TODO Auto-generated method stub
+		return "Add operation";
+	}
+
 }

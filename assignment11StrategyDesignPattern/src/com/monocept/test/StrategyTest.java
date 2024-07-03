@@ -11,11 +11,12 @@ public class StrategyTest {
 		
 		OperationStrategy operationStrategy = new OperationStrategy(new AddOperation());
 		
-		System.out.println("Add operation: "+ operationStrategy.doOperation(10, 20));
+		System.out.println(operationStrategy.description()+ " " + operationStrategy.doOperation(10, 20));
+		
 		
 		operationStrategy.setiOperation(new MultiplyOperation());
 		
-		System.out.println("Multiply operation: "+ operationStrategy.doOperation(10, 20));
+		System.out.println(operationStrategy.description()+ " " + operationStrategy.doOperation(10, 20));
 
 	}
 

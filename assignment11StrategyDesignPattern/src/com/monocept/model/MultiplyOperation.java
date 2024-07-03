@@ -8,4 +8,10 @@ public class MultiplyOperation implements IOperation{
 		return a*b;
 	}
 
+	@Override
+	public String description() {
+		// TODO Auto-generated method stub
+		return "Multiply operation";
+	}
+
 }

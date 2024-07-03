@@ -2,7 +2,7 @@ package com.monocept.model;
 
 public class OperationStrategy implements IOperation{
 	
-	IOperation iOperation;
+	private IOperation iOperation;
 	
 
 	public OperationStrategy(IOperation iOperation) {
@@ -20,6 +20,13 @@ public class OperationStrategy implements IOperation{
 
 	public void setiOperation(IOperation iOperation) {
 		this.iOperation = iOperation;
+	}
+
+
+	@Override
+	public String description() {
+		// TODO Auto-generated method stub
+		return iOperation.description();
 	}
 	
 	
